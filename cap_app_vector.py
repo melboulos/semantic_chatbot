@@ -11,14 +11,14 @@ import boto3
 import json as json_lib
 
 # === CONFIG ===
-CB_CONN_STRING = "couchbases://cb.c5ptbdkkteapnfw.cloud.couchbase.com"  # TLS
+CB_CONN_STRING = "couchbases://cb<YourID>...cloud.couchbase.com"  # TLS
 CB_BUCKET = "block_convo"
 CB_USERNAME = "chatbot"
 CB_PASSWORD = "Chatbot123!"
 CB_TLS_CERT = "/Users/melboulos/Downloads/qvc-demo-root-certificate.txt"
 
 # Full FTS URL (bucket.scope.index)
-CB_FTS_URL = "https://cb.c5ptbdkkteapnfw.cloud.couchbase.com:18094/api/index/block_convo._default.chat_vector_index/query"
+CB_FTS_URL = "https://cb<YourID>...cloud.couchbase.com:18094/api/index/block_convo._default.chat_vector_index/query"
 
 BEDROCK_REGION = "us-east-1"
 EMBED_MODEL_ID = "amazon.titan-embed-text-v1"
